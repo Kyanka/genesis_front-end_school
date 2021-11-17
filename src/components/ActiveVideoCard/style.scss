@@ -1,0 +1,73 @@
+.card {
+  font-size: 15rem;
+  display: grid;
+  grid-template-areas:
+  "ava info info"
+  "ava video metr";
+  grid-template-rows: 100rem 1200rem;
+  grid-template-columns: 70rem 600rem 70rem;
+  grid-gap: 8rem;
+
+  &__creator_ava {
+    grid-area: ava;
+    width: 70rem;
+    height: 70rem;
+    border-radius: 50%;
+  }
+
+  .info {
+    grid-area: info;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: flex-start;
+
+    &__author {
+      display: flex;
+      gap: 10rem;
+
+      &--name {
+
+      }
+      &--nick {
+
+
+      }
+    }
+
+    &__video {
+      display: flex;
+      flex-direction: column;
+      align-content: flex-start;
+      justify-content: flex-start;
+
+      &--text {
+        display: flex;
+        align-content: flex-start;
+        justify-content: flex-start;
+      }
+      &--music {
+        display: flex;
+        align-content: flex-start;
+        justify-content: flex-start;
+        font-weight: bold;
+      }
+    }
+  }
+
+
+  &__video {
+    grid-area: video;
+
+  }
+
+  &__metrics {
+    grid-area: metr;
+
+  }
+
+  &__metric {
+
+  }
+}
+
